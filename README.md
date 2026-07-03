@@ -2,7 +2,7 @@
 
 An enterprise-grade, agentic RAG (Retrieval-Augmented Generation) system built to ingest, analyze, and visualize corporate financial data. This project streamlines the fundamental analysis process for equity research analysts and portfolio managers.
 
-## 🚀 Key Features
+## Key Features
 
 *   **Dual-Agent Workflow**: 
     *   **Primary Analyst Agent**: Synthesizes complex answers from 10-Ks, earnings transcripts, and analyst reports.
@@ -16,14 +16,14 @@ An enterprise-grade, agentic RAG (Retrieval-Augmented Generation) system built t
 | Feature | Screenshot |
 | :--- | :--- |
 | **Main Interface** | ![Main Page](1.%20Main%20Page.png) |
-| **Data Processing** | ![Success Processing](screenshots/2.%20Sucessfull%20processing%20of%20data.png) |
-| **Trend Analysis 1** | ![Trend 1](screenshots/3.%20Trend%20Analysis%20chart%201.png) |
-| **Analyst Agent Response** | ![Agent Response 1](screenshots/4.%20Agent%20response%201.png) |
-| **Risk & Source Audit** | ![Audit 1](screenshots/5.%20Risk%20and%20Source%20audit%201.png) |
-| **Agent Response 2** | ![Agent Response 2](screenshots/6.%20Agent%20Response%202.png) |
-| **Trend Analysis 2** | ![Trend 2](screenshots/7.%20Trend%20Analysis%20chart%202.png) |
-| **Risk & Source Audit 2** | ![Audit 2](screenshots/8.%20Risk%20and%20Source%20audit%202.png) |
-| **System Logs** | ![Backend Logs](screenshots/9.%20Backend%20Logs%20of%20two%20agents.png) |
+| **Data Processing** | ![Success Processing](2.%20Sucessfull%20processing%20of%20data.png) |
+| **Trend Analysis 1** | ![Trend 1](3.%20Trend%20Analysis%20chart%201.png) |
+| **Analyst Agent Response** | ![Agent Response 1](4.%20Agent%20response%201.png) |
+| **Risk & Source Audit** | ![Audit 1](5.%20Risk%20and%20Source%20audit%201.png) |
+| **Agent Response 2** | ![Agent Response 2](6.%20Agent%20Response%202.png) |
+| **Trend Analysis 2** | ![Trend 2](7.%20Trend%20Analysis%20chart%202.png) |
+| **Risk & Source Audit 2** | ![Audit 2](8.%20Risk%20and%20Source%20audit%202.png) |
+| **System Logs** | ![Backend Logs](9.%20Backend%20Logs%20of%20two%20agents.png) |
 
 ## 🛠️ Technical Stack
 
@@ -33,12 +33,12 @@ An enterprise-grade, agentic RAG (Retrieval-Augmented Generation) system built t
 *   **Inference**: Local LLM via Ollama (Llama 3)
 *   **Data Processing**: Pandas
 
-## 🚀 How to Run
+## How to Run?
 
 1.  **Clone the repository**:
     ```bash
-    git clone [https://github.com/yourusername/financial-rag-system.git](https://github.com/yourusername/financial-rag-system.git)
-    cd financial-rag-system
+    git clone [https://github.com/PaulImmanuel/Automated-Financial-Report-Analysis-System-with-RAG.git](https://github.com/PaulImmanuel/Automated-Financial-Report-Analysis-System-with-RAG.git)
+    cd Automated-Financial-Report-Analysis-System-with-RAG
     ```
 
 2.  **Install dependencies**:
@@ -54,4 +54,4 @@ An enterprise-grade, agentic RAG (Retrieval-Augmented Generation) system built t
     ```
 
 ## 📝 License
-This project is for academic/internship assessment purposes.
+This project is a part of "InternsElite Internship" assessment purposes.

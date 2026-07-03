@@ -11,6 +11,8 @@ An enterprise-grade, agentic RAG (Retrieval-Augmented Generation) system built t
 *   **Automated Analytics Dashboard**: Dynamically extracts financial metrics from CSV data to generate real-time trend visualizations (Margins, Revenue, EPS).
 *   **Source Citations**: Full transparency by displaying retrieved source chunks used to generate every LLM response.
 
+![Architecture](Architecture.png)
+
 ## 📸 System Overview
 
 | Feature | Screenshot |

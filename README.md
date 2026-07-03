@@ -1,8 +1,8 @@
-# Automated Financial Report Analysis System
+# Automated Financial Report Analysis System 💵
 
 An enterprise-grade, agentic RAG (Retrieval-Augmented Generation) system built to ingest, analyze, and visualize corporate financial data. This project streamlines the fundamental analysis process for equity research analysts and portfolio managers.
 
-## Key Features
+## Key Features 💫
 
 *   **Dual-Agent Workflow**: 
     *   **Primary Analyst Agent**: Synthesizes complex answers from 10-Ks, earnings transcripts, and analyst reports.

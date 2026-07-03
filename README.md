@@ -103,7 +103,7 @@ and generates side-by-side comparisons including:
 Text Chunking (RecursiveCharacterTextSplitter)
             │
             ▼
- Sentence Embeddings(llama3)
+    Sentence Embeddings
             │
             ▼
     FAISS Vector Store
@@ -135,7 +135,6 @@ Primary Agent   Auditor Agent
 | LLM | Ollama (Llama 3) |
 | Framework | LangChain |
 | Vector Database | FAISS |
-| Embeddings | all-MiniLM-L6-v2 |
 | PDF Processing | PyPDF2 |
 | Data Processing | Pandas |
 | Retrieval | Maximal Marginal Relevance (MMR) |

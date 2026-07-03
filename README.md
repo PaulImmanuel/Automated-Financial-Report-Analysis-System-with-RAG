@@ -37,7 +37,7 @@ An enterprise-grade, agentic RAG (Retrieval-Augmented Generation) system built t
 
 1.  **Clone the repository**:
     ```bash
-    git clone [https://github.com/PaulImmanuel/Automated-Financial-Report-Analysis-System-with-RAG.git](https://github.com/PaulImmanuel/Automated-Financial-Report-Analysis-System-with-RAG.git)
+    git clone https://github.com/PaulImmanuel/Automated-Financial-Report-Analysis-System-with-RAG.git
     cd Automated-Financial-Report-Analysis-System-with-RAG
     ```
 

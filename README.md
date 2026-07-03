@@ -150,7 +150,7 @@ Primary Agent   Auditor Agent
 > Add screenshot here
 
 ```
-images/data_processing.png
+2. Sucessfull processing of data.png
 ```
 
 ### Trend Analysis

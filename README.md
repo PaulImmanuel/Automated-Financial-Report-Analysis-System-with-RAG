@@ -1,0 +1,2 @@
+# Automated-Financial-Report-Analysis-System-with-RAG
+A Retrieval-Augmented Generation (RAG) System designed specifically for financial analysis. It ingests complex financial documents (10-Ks, Earnings Reports, Analyst Notes) and tabular financial statements, enabling users to perform natural language querying, automated peer comparisons, and trend visualization. Major project under "InternsElite"

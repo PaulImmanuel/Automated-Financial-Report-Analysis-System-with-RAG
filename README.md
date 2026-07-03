@@ -1,12 +1,12 @@
 # 📈 Automated Financial Report Analysis System
 
-An **Enterprise-Grade Retrieval-Augmented Generation (RAG)** system for analyzing financial reports using Large Language Models (LLMs). The application enables users to query financial documents in natural language, compare companies, detect qualitative risks, and visualize financial trends through an interactive dashboard.
+An **Retrieval-Augmented Generation (RAG)** system for analyzing financial reports using Large Language Models (LLMs). The application enables users to query financial documents in natural language, compare companies, detect qualitative risks, and visualize financial trends through an interactive dashboard.
 
 ---
 
 ## 🌟 Overview
 
-This project was developed as an internship project to simplify financial document analysis by combining **Retrieval-Augmented Generation (RAG)** with **parallel AI agents**.
+This project was developed as an 'InternsElite' internship project to simplify financial document analysis by combining **Retrieval-Augmented Generation (RAG)** with **parallel AI agents**.
 
 The system processes both:
 
@@ -94,23 +94,22 @@ and generates side-by-side comparisons including:
 ## 🏗️ System Architecture
 
 ```
-Financial Reports (PDF)
+   Financial Reports (PDF)
             │
             ▼
-      Document Loader
+    Document Loader
             │
             ▼
- Text Chunking (RecursiveCharacterTextSplitter)
+Text Chunking (RecursiveCharacterTextSplitter)
             │
             ▼
- Sentence Embeddings
-(all-MiniLM-L6-v2)
+ Sentence Embeddings(llama3)
             │
             ▼
-       FAISS Vector Store
+    FAISS Vector Store
             │
             ▼
-      Semantic Retrieval
+    Semantic Retrieval
             │
      ┌───────────────┐
      │               │
@@ -210,9 +209,9 @@ images/backend_processing.png
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/financial-rag-system.git
+git clone https://github.com/PaulImmanuel/Automated-Financial-Report-Analysis-System-with-RAG.git
 
-cd financial-rag-system
+cd Automated-Financial-Report-Analysis-System-with-RAG
 ```
 
 ---
@@ -220,14 +219,14 @@ cd financial-rag-system
 ## 2. Install Dependencies
 
 ```bash
-pip install streamlit \
-langchain \
-langchain-community \
-langchain-core \
-langchain-text-splitters \
-faiss-cpu \
-sentence-transformers \
-PyPDF2 \
+pip install streamlit
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+faiss-cpu
+sentence-transformers
+PyPDF2
 pandas
 ```
 
@@ -268,23 +267,6 @@ streamlit run financial_rag_app.py
 
 ---
 
-# 📂 Project Structure
-
-```
-financial-rag-system/
-│
-├── financial_rag_app.py
-├── data/
-├── documents/
-├── images/
-├── utils/
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
-
----
-
 # 🔮 Future Enhancements
 
 - 🌐 Live financial market API integration (Yahoo Finance, Alpha Vantage)
@@ -309,5 +291,5 @@ This project is intended for educational and research purposes.
 
 B.Tech Computer Science & Engineering
 
-Enterprise Financial RAG System Internship Project
+InternsElite Internship Major Project
 ```

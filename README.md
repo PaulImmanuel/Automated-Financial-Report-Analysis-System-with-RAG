@@ -1,294 +1,57 @@
-# 📈 Automated Financial Report Analysis System
-
-An **Retrieval-Augmented Generation (RAG)** system for analyzing financial reports using Large Language Models (LLMs). The application enables users to query financial documents in natural language, compare companies, detect qualitative risks, and visualize financial trends through an interactive dashboard.
-
----
-
-## 🌟 Overview
-
-This project was developed as an 'InternsElite' internship project to simplify financial document analysis by combining **Retrieval-Augmented Generation (RAG)** with **parallel AI agents**.
-
-The system processes both:
-
-- 📄 Unstructured financial documents (10-Ks, Annual Reports, Earnings Reports, Analyst Notes)
-- 📊 Structured financial datasets (CSV financial statements)
-
-It provides intelligent answers, peer comparisons, risk analysis, and automatic chart generation through an intuitive Streamlit interface.
-
-### Target Users
-
-- Equity Research Analysts
-- Portfolio Managers
-- Retail Investors
-- Financial Analysts
-- Business Journalists
-
----
-
-# 🚀 Features
-
-### 🔍 Dual-Agent RAG Architecture
-
-The system uses two AI agents working simultaneously.
-
-### 📊 Primary Analyst Agent
-
-- Semantic document retrieval using **Maximal Marginal Relevance (MMR)**
-- Context-aware financial question answering
-- Financial trend explanations
-- Company performance summaries
-
-### ⚠️ Auditor / Risk Agent
-
-Runs in parallel to identify:
-
-- Management speak
-- Vague explanations
-- Revenue decline justifications
-- Potential qualitative red flags
-- Source verification
-
----
-
-### 📄 Dynamic Data Ingestion
-
-Supports both structured and unstructured data.
-
-- PDF Financial Reports
-- Annual Reports
-- Earnings Reports
-- CSV Financial Statements
-
----
-
-### 📈 Automated Trend Visualization
-
-Automatically extracts requested financial metrics such as:
-
-- Revenue
-- Net Income
-- Operating Margin
-- EPS
-- Growth Rate
-
-and generates interactive time-series charts.
-
----
-
-### 🤝 Intelligent Peer Comparison
-
-Automatically detects comparison questions such as:
-
-> Compare Apple and Microsoft
-
-and generates side-by-side comparisons including:
-
-- Revenue
-- Market Cap
-- Profitability
-- Growth
-- Key observations
-
----
-
-## 🏗️ System Architecture
-
-```
-   Financial Reports (PDF)
-            │
-            ▼
-    Document Loader
-            │
-            ▼
-Text Chunking (RecursiveCharacterTextSplitter)
-            │
-            ▼
-    Sentence Embeddings
-            │
-            ▼
-    FAISS Vector Store
-            │
-            ▼
-    Semantic Retrieval
-            │
-     ┌───────────────┐
-     │               │
-     ▼               ▼
-Primary Agent   Auditor Agent
-     │               │
-     └──────┬────────┘
-            ▼
-     Final AI Response
-            │
-            ▼
- Streamlit Enterprise Dashboard
-```
-
----
-
-# 🛠️ Technologies Used
-
-| Component | Technology |
-|-----------|------------|
-| Language | Python |
-| Frontend | Streamlit |
-| LLM | Ollama (Llama 3) |
-| Framework | LangChain |
-| Vector Database | FAISS |
-| PDF Processing | PyPDF2 |
-| Data Processing | Pandas |
-| Retrieval | Maximal Marginal Relevance (MMR) |
-
----
-
-# 📸 Screenshots
-
-## 📊 Data Processing & Analytics
-
-### Processing Financial Data
-
-> Add screenshot here
-
-```
-2. Sucessfull processing of data.png
-```
-
-### Trend Analysis
-
-> Add screenshot here
-
-```
-images/trend_analysis.png
-```
-
----
-
-## 🤖 Dual-Agent Responses
-
-### Primary Analyst
-
-> Add screenshot here
-
-```
-images/primary_agent.png
-```
-
-### Auditor Agent
-
-> Add screenshot here
-
-```
-images/auditor_agent.png
-```
-
----
-
-## 📈 Advanced Analytics
-
-### Trend Detection
-
-> Add screenshot here
-
-```
-images/trend_detection.png
-```
-
-### Backend Parallel Processing
-
-> Add screenshot here
-
-```
-images/backend_processing.png
-```
-
----
-
-# ⚙️ Installation
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/PaulImmanuel/Automated-Financial-Report-Analysis-System-with-RAG.git
-
-cd Automated-Financial-Report-Analysis-System-with-RAG
-```
-
----
-
-## 2. Install Dependencies
-
-```bash
-pip install streamlit
-langchain
-langchain-community
-langchain-core
-langchain-text-splitters
-faiss-cpu
-sentence-transformers
-PyPDF2
-pandas
-```
-
----
-
-## 3. Install Ollama
-
-Download and install Ollama from:
-
-https://ollama.com/
-
----
-
-## 4. Download the Llama 3 Model
-
-```bash
-ollama run llama3
-```
-
----
-
-## 5. Launch the Application
-
-```bash
-streamlit run financial_rag_app.py
-```
-
----
-
-# 💡 Example Queries
-
-- Summarize Tesla's latest annual report.
-- Compare Apple and Microsoft revenue growth.
-- Why did operating margins decline?
-- Show revenue trend over the last five years.
-- Identify qualitative risks mentioned by management.
-- Compare EPS and revenue between two companies.
-
----
-
-# 🔮 Future Enhancements
-
-- 🌐 Live financial market API integration (Yahoo Finance, Alpha Vantage)
-- 📊 Interactive Plotly dashboards
-- 📑 Improved extraction of financial tables embedded in PDFs
-- 🧮 GAAP-based mathematical consistency checks
-- ☁️ Cloud deployment (AWS/Azure/GCP)
-- 💬 Multi-document conversational memory
-- 📈 Portfolio-level financial analysis
-
----
-
-# 📜 License
-
-This project is intended for educational and research purposes.
-
----
-
-# 👨‍💻 Author
-
-**Paul Immanuel J**
-
-B.Tech Computer Science & Engineering
-
-InternsElite Internship Major Project
-```
+# Automated Financial Report Analysis System
+
+An enterprise-grade, agentic RAG (Retrieval-Augmented Generation) system built to ingest, analyze, and visualize corporate financial data. This project streamlines the fundamental analysis process for equity research analysts and portfolio managers.
+
+## 🚀 Key Features
+
+*   **Dual-Agent Workflow**: 
+    *   **Primary Analyst Agent**: Synthesizes complex answers from 10-Ks, earnings transcripts, and analyst reports.
+    *   **Auditor/Red Flag Agent**: Automatically scans documents to detect vague management language, risk factors, and inconsistencies.
+*   **Hybrid RAG Architecture**: Combines PDF-based unstructured text retrieval (via FAISS & MMR) with structured tabular data from financial statements.
+*   **Automated Analytics Dashboard**: Dynamically extracts financial metrics from CSV data to generate real-time trend visualizations (Margins, Revenue, EPS).
+*   **Source Citations**: Full transparency by displaying retrieved source chunks used to generate every LLM response.
+
+## 📸 System Overview
+
+| Feature | Screenshot |
+| :--- | :--- |
+| **Main Interface** | ![Main Page](1.%20Main%20Page.png) |
+| **Data Processing** | ![Success Processing](screenshots/2.%20Sucessfull%20processing%20of%20data.png) |
+| **Trend Analysis 1** | ![Trend 1](screenshots/3.%20Trend%20Analysis%20chart%201.png) |
+| **Analyst Agent Response** | ![Agent Response 1](screenshots/4.%20Agent%20response%201.png) |
+| **Risk & Source Audit** | ![Audit 1](screenshots/5.%20Risk%20and%20Source%20audit%201.png) |
+| **Agent Response 2** | ![Agent Response 2](screenshots/6.%20Agent%20Response%202.png) |
+| **Trend Analysis 2** | ![Trend 2](screenshots/7.%20Trend%20Analysis%20chart%202.png) |
+| **Risk & Source Audit 2** | ![Audit 2](screenshots/8.%20Risk%20and%20Source%20audit%202.png) |
+| **System Logs** | ![Backend Logs](screenshots/9.%20Backend%20Logs%20of%20two%20agents.png) |
+
+## 🛠️ Technical Stack
+
+*   **Framework**: Streamlit
+*   **LLM Orchestration**: LangChain
+*   **Vector Database**: FAISS (In-memory)
+*   **Inference**: Local LLM via Ollama (Llama 3)
+*   **Data Processing**: Pandas
+
+## 🚀 How to Run
+
+1.  **Clone the repository**:
+    ```bash
+    git clone [https://github.com/yourusername/financial-rag-system.git](https://github.com/yourusername/financial-rag-system.git)
+    cd financial-rag-system
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    pip install streamlit langchain langchain-text-splitters langchain-community faiss-cpu sentence-transformers PyPDF2 pandas
+    ```
+
+3.  **Ensure Ollama is running** with `llama3` downloaded.
+
+4.  **Launch the application**:
+    ```bash
+    streamlit run financial_rag_app.py
+    ```
+
+## 📝 License
+This project is for academic/internship assessment purposes.
